@@ -14,25 +14,51 @@
 
 # Assign your name to a variable called `my_name`
 
+my_name <- "Crystalyn"
+my_name
+
+
 # Assign the number of pets you have to a variable called `num_pets`
+
+num_pets <- 8
+num_pets
 
 # Assign the title of your favorite book as a variable called `favorite_book`
 
+favorite_book <- "Twisted"
+favorite_book
+
 # Create a variable called `radius`, which is your favorite number
+
+radius <- 7 
+radius
 
 # Create a variable called `area`, which is the area of a circle with that radius.
 # Use the variable `radius` to calculate this. 
 # Use the built-in constant `pi` for pi.
 
 
+area <- pi * radius^2
+area
+
 # Create a boolean variable `too_big` that is set to TRUE if the area is larger than 100
 # Use a relationship operator to do this  (don't just set it to "TRUE")
 # Think: how do you check if it's larger than 10? Assign that to your new variable name. 
+
+too_big <- area > 100
+too_big
+
+too_small <- area > 200
+too_small
 
 
 # Display the variable `my_name`
 # Display the variable `area` 
 # Display the variable `too_big`
+
+my_name 
+area
+too_big
 
 
 ### PART TWO ###
@@ -40,28 +66,60 @@
 # Create a variable `name_length` that holds how many letters (including spaces)
 # are in your name, using the variable you made above. (use the `nchar()` function)
 
+name_length <- nchar(my_name )
+name_length
+
 # Print the number of letters in your name
+
+print(name_length)
 
 # Create a variable `now_doing` that is your name followed by "is programming!" 
 # (use the `paste()` function)
 
+now_doing <- paste(my_name,"is programming")
+print (now_doing)
+
 # Make the `now_doing` variable upper case
+
+now_doing <- toupper(paste(my_name,"is programming"))
+print(now_doing)
 
 # Pick two of your favorite numbers (between 1 and 100) and assign them to 
 # variables `fav_1` and `fav_2`
 
+fav_1 <- 99
+fav_2 <-7
+print(fav_1)
+
 # Divide each number by the square root of 201 and save the new value in the
 # original variable
 
+fav_1 <- 99 / sqrt(201)
+fav_2 <- 7 / sqrt(201)
+
+print(fav_1)
+print(fav_2)
 # Create a variable `raw_sum` that is the sum of the two variables. Use the 
 # `sum()` function for practice.
+raw_sum <- sum(.0990,7.679)
+print(raw_sum)
 
 # Create a variable `round_sum` that is the `raw_sum` rounded to 2 decimal places.
 # Use the `round()` function.
 
+round_sum <- round(raw_sum,2)
+print(round_sum)
+
 # Create two new variables `round_1` and `round_2` that are your `fav_1` and 
 # `fav_2` variables rounded to 2 decimal places
+round_1 <- round(fav_1,2)
+print(round_1)
+round_2 <- round(fav_2,2)
+print(round_2)
+
 
 # Create a variable `sum_round` that is the sum of the rounded values
+sum_round <- sum(round_2,round_1)
+print(sum_round)
 
 # Print out both variables and compare. Are they the same?
